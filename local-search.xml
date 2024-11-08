@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>liunx查看端口被哪个程序占用</title>
+    <link href="/2024/11/08/liunx%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3%E8%A2%AB%E5%93%AA%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%8D%A0%E7%94%A8/"/>
+    <url>/2024/11/08/liunx%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3%E8%A2%AB%E5%93%AA%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%8D%A0%E7%94%A8/</url>
+    
+    <content type="html"><![CDATA[<p>查看liunx端口被那个程序占用</p><h2 id="常用的方法"><a href="#常用的方法" class="headerlink" title="常用的方法"></a>常用的方法</h2><p> sudo lsof -i :端口号</p><h3 id="譬如"><a href="#譬如" class="headerlink" title="譬如"></a>譬如</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">sudo</span> lsof -i -P -n | grep 18081<br><br><span class="hljs-built_in">sudo</span> lsof -i -P -n | grep 端口号<br></code></pre></td></tr></table></figure><p>执行结果</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash">[root@iZuf683s6z2f7r40uie2drZ ~]# <span class="hljs-built_in">sudo</span> lsof -i -P -n | grep 18081<br>nginx      213543            root   23u  IPv4    935941      0t0  TCP *:18081 (LISTEN)<br>nginx     2960361          nobody   23u  IPv4    935941      0t0  TCP *:18081 (LISTEN)<br><br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>运维</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>liunx</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>测试文章</title>
     <link href="/2024/11/07/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/"/>
     <url>/2024/11/07/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</url>
