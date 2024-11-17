@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>githubPages创建个人网站</title>
+    <link href="/2024/11/17/githubPages%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/"/>
+    <url>/2024/11/17/githubPages%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</url>
+    
+    <content type="html"><![CDATA[<p>创建网站大部分需要一台服务器（部署资源），公网IP或者域名　（大部分是域名），有时候没有那么多预算可以使用github提供的pages功能实现专属自己的一个博客网站</p><h2 id="注册github账号"><a href="#注册github账号" class="headerlink" title="注册github账号"></a>注册github账号</h2><h2 id="创建个人博客仓库"><a href="#创建个人博客仓库" class="headerlink" title="创建个人博客仓库"></a>创建个人博客仓库</h2><h2 id="选择博客前端展示方式的框架"><a href="#选择博客前端展示方式的框架" class="headerlink" title="选择博客前端展示方式的框架"></a>选择博客前端展示方式的框架</h2><h2 id="配置独特的域名"><a href="#配置独特的域名" class="headerlink" title="配置独特的域名"></a>配置独特的域名</h2><h2 id="配置域名SSL"><a href="#配置域名SSL" class="headerlink" title="配置域名SSL"></a>配置域名SSL</h2>]]></content>
+    
+    
+    <categories>
+      
+      <category>网站自助建站</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>个人名片</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hello World</title>
     <link href="/2024/11/17/hello-world/"/>
     <url>/2024/11/17/hello-world/</url>
