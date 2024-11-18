@@ -19,24 +19,22 @@
   <meta name="author" content="褚留欢">
   <meta name="keywords" content="">
   
-    <meta name="description" content="留欢的随谈随记录">
+    <meta name="description" content="查看liunx端口被那个程序占用 常用的方法 sudo lsof -i :端口号 譬如123sudo lsof -i -P -n | grep 18081sudo lsof -i -P -n | grep 端口号  执行结果 1234[root@iZuf683s6z2f7r40uie2drZ ~]# sudo lsof -i -P -n | grep 18081nginx      213543">
 <meta property="og:type" content="article">
-<meta property="og:title" content="测试文章">
-<meta property="og:url" content="http://example.com/2024/11/07/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/index.html">
+<meta property="og:title" content="liunx查看端口被哪个程序占用">
+<meta property="og:url" content="http://example.com/2024/11/08/liunx%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3%E8%A2%AB%E5%93%AA%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%8D%A0%E7%94%A8/index.html">
 <meta property="og:site_name" content="留欢随谈">
-<meta property="og:description" content="留欢的随谈随记录">
+<meta property="og:description" content="查看liunx端口被那个程序占用 常用的方法 sudo lsof -i :端口号 譬如123sudo lsof -i -P -n | grep 18081sudo lsof -i -P -n | grep 端口号  执行结果 1234[root@iZuf683s6z2f7r40uie2drZ ~]# sudo lsof -i -P -n | grep 18081nginx      213543">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-11-07T06:55:11.000Z">
-<meta property="article:modified_time" content="2024-11-17T14:15:01.300Z">
+<meta property="article:published_time" content="2024-11-08T07:46:03.000Z">
+<meta property="article:modified_time" content="2024-11-18T12:57:30.509Z">
 <meta property="article:author" content="褚留欢">
-<meta property="article:tag" content="jQuery">
-<meta property="article:tag" content="表格">
-<meta property="article:tag" content="表单验证">
+<meta property="article:tag" content="liunx">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>测试文章 - 留欢随谈</title>
+  <title>liunx查看端口被哪个程序占用 - 留欢随谈</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -215,7 +213,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="测试文章"></span>
+            <span id="subtitle" data-typed-text="liunx查看端口被哪个程序占用"></span>
           
         </div>
 
@@ -226,8 +224,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-11-07 14:55" pubdate>
-          2024年11月7日 下午
+        <time datetime="2024-11-08 15:46" pubdate>
+          2024年11月8日 下午
         </time>
       </span>
     
@@ -238,7 +236,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          0 字
+          51 字
         
       </span>
     
@@ -286,12 +284,19 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">测试文章</h1>
+            <h1 id="seo-header">liunx查看端口被哪个程序占用</h1>
             
             
               <div class="markdown-body">
                 
-                
+                <p>查看liunx端口被那个程序占用</p>
+<h2 id="常用的方法"><a href="#常用的方法" class="headerlink" title="常用的方法"></a>常用的方法</h2><p> sudo lsof -i :端口号</p>
+<h3 id="譬如"><a href="#譬如" class="headerlink" title="譬如"></a>譬如</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">sudo</span> lsof -i -P -n | grep 18081<br><br><span class="hljs-built_in">sudo</span> lsof -i -P -n | grep 端口号<br></code></pre></td></tr></table></figure>
+
+<p>执行结果</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash">[root@iZuf683s6z2f7r40uie2drZ ~]# <span class="hljs-built_in">sudo</span> lsof -i -P -n | grep 18081<br>nginx      213543            root   23u  IPv4    935941      0t0  TCP *:18081 (LISTEN)<br>nginx     2960361          nobody   23u  IPv4    935941      0t0  TCP *:18081 (LISTEN)<br><br></code></pre></td></tr></table></figure>
+
+
                 
               </div>
             
@@ -309,7 +314,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/web%E5%89%8D%E7%AB%AF/" class="category-chain-item">web前端</a>
+  <a href="/categories/%E8%BF%90%E7%BB%B4/" class="category-chain-item">运维</a>
   
   
 
@@ -324,11 +329,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/jQuery/" class="print-no-link">#jQuery</a>
-      
-        <a href="/tags/%E8%A1%A8%E6%A0%BC/" class="print-no-link">#表格</a>
-      
-        <a href="/tags/%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81/" class="print-no-link">#表单验证</a>
+        <a href="/tags/liunx/" class="print-no-link">#liunx</a>
       
     </div>
   
@@ -340,8 +341,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>测试文章</div>
-      <div>http://example.com/2024/11/07/测试文章/</div>
+      <div>liunx查看端口被哪个程序占用</div>
+      <div>http://example.com/2024/11/08/liunx查看端口被哪个程序占用/</div>
     </div>
     <div class="license-meta">
       
@@ -353,7 +354,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2024年11月7日</div>
+          <div>2024年11月8日</div>
         </div>
       
       
@@ -385,9 +386,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/11/08/liunx%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3%E8%A2%AB%E5%93%AA%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%8D%A0%E7%94%A8/" title="liunx查看端口被哪个程序占用">
+                      <a href="/2024/11/13/vue%E5%AD%90%E7%88%B6%E7%BB%84%E4%BB%B6%E5%AF%B9%E8%B1%A1%E4%BC%A0%E9%80%92/" title="vue子父组件对象传递">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">liunx查看端口被哪个程序占用</span>
+                        <span class="hidden-mobile">vue子父组件对象传递</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -395,8 +396,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/11/06/hello-world/" title="Hello World">
-                        <span class="hidden-mobile">Hello World</span>
+                      <a href="/2024/11/07/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/" title="测试文章">
+                        <span class="hidden-mobile">测试文章</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

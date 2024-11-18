@@ -8,7 +8,7 @@
     <link href="/2024/11/17/githubPages%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/"/>
     <url>/2024/11/17/githubPages%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</url>
     
-    <content type="html"><![CDATA[<p>创建网站大部分需要一台服务器（部署资源），公网IP或者域名　（大部分是域名），有时候没有那么多预算可以使用github提供的pages功能实现专属自己的一个博客网站</p><h2 id="注册github账号"><a href="#注册github账号" class="headerlink" title="注册github账号"></a>注册github账号</h2><h2 id="创建个人博客仓库"><a href="#创建个人博客仓库" class="headerlink" title="创建个人博客仓库"></a>创建个人博客仓库</h2><h2 id="选择博客前端展示方式的框架"><a href="#选择博客前端展示方式的框架" class="headerlink" title="选择博客前端展示方式的框架"></a>选择博客前端展示方式的框架</h2><h2 id="配置独特的域名"><a href="#配置独特的域名" class="headerlink" title="配置独特的域名"></a>配置独特的域名</h2><h2 id="配置域名SSL"><a href="#配置域名SSL" class="headerlink" title="配置域名SSL"></a>配置域名SSL</h2>]]></content>
+    <content type="html"><![CDATA[<p>创建网站大部分需要一台服务器（部署资源），公网IP或者域名　（大部分是域名），有时候没有那么多预算可以使用github提供的pages功能实现专属自己的一个博客网站</p><h2 id="1-注册github账号"><a href="#1-注册github账号" class="headerlink" title="1. 注册github账号"></a>1. 注册github账号</h2><p>前提是先拥有一个github账号，进入 <a href="https://github.com/">github官网</a> 注册一个属于账号<br><img src="/2024/11/06/hello-world/%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/github%E7%9A%84signUP.png" alt="进入github页面的sign up模块进行注册账号"><br>输入要绑定的邮箱地址、密码和账号用户名后，点击continue 继续按钮</p><p><img src="/2024/11/06/hello-world/%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/inputEmailAddress.png" alt="输入要绑定的邮箱地址、密码和账号用户名"> </p><p><img src="/2024/11/06/hello-world/%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/verify.png" alt="输入信息后验证中"></p><p>验证成功后登录账号</p><p><img src="/2024/11/06/hello-world/%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/signUP.png" alt="输入邮箱验证码，验证成功后 登录账号"></p><h2 id="2-创建个人博客仓库"><a href="#2-创建个人博客仓库" class="headerlink" title="2.  创建个人博客仓库"></a>2.  创建个人博客仓库</h2><p>创建个人仓库，仓库名称起<code>&lt;用户名&gt;.github.io</code> ,比如你的github用户名是 <code>zhangsan </code>仓库名就起 <code>zhangsan.github.io</code><br><img src="/2024/11/06/hello-world/%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/createResitory.png" alt="创建个人仓库"></p><p>点击creating a new file创建一个新文件，作为个人网站的主页<br><img src="/2024/11/06/hello-world/%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/createNewFile.png" alt="创建新文件"><br>新文件的名字必须为index.html，内容先随便写一个简单的，内容示例如下，填写之后点击Commit new file提交。</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs xml"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>chuliuhuan<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>chuliuhuan的个人主页<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello world<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span><br><br><br></code></pre></td></tr></table></figure><p><img src="/2024/11/06/hello-world/%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/createIndex.png" alt="createIndex"></p><p>进入该仓库setting设置TAB页面，Pages选项 可以看到 web site地址   <a href="https://chuliuhuan.github.io/">https://chuliuhuan.github.io/</a><br><img src="/2024/11/06/hello-world/%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/pagesWebSiteURL.png" alt="pagesWebSiteURL"> </p><p>访问仓库URL地址<a href="https://chuliuhuan.github.io/">https://chuliuhuan.github.io/</a> 仓库地址，访问成功仓库创建、配置成功~~</p><p><img src="/2024/11/06/hello-world/%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/webSite.png" alt="访问web site网站"></p><h2 id="3-选择博客前端展示方式的框架"><a href="#3-选择博客前端展示方式的框架" class="headerlink" title="3. 选择博客前端展示方式的框架"></a>3. 选择博客前端展示方式的框架</h2><p>以上github Pages已经配置完成了~ 熟悉前端的小伙伴可以把任意静态资源丢到仓库里面，理论就可以的。<br>这里我们使用基于Node.js静态博客框架 hexo </p><h3 id="3-1-准备工作"><a href="#3-1-准备工作" class="headerlink" title="3.1 准备工作"></a>3.1 准备工作</h3><ul><li>git</li><li>node.js （可以用nvm）</li><li>编辑器 （markdown编辑器或者vscode编辑器）</li><li>域名</li><li>gitcafe （也可namecheap购买域名）</li></ul><p>markdown编辑器是非必须的，只要你熟悉语法，随便一个编辑器来写都不是问题。</p><p>域名也是非必须的，gitcafe pages服务提供免费的二级域名。注册域名的教程这里就不写了。</p><h3 id="3-2-安装hexo"><a href="#3-2-安装hexo" class="headerlink" title="3.2  安装hexo"></a>3.2  安装hexo</h3><p><a href="https://hexo.io/zh-cn/">进入hexo官网</a>  可以访问具体hexo使用文档，<code>npm install hexo-cli -g</code> 全局安装hexo插件<br><img src="/2024/11/06/hello-world/%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/hexoWebSite.png" alt="hexo官网"></p><p>安装hexo</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install -g hexo-cli<br></code></pre></td></tr></table></figure><p>查看版本</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo -v<br></code></pre></td></tr></table></figure><p>创建一个项目 <code>hexo-cli</code> 并初始化</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo init hexo-cli<br><span class="hljs-built_in">cd</span> hexo-cli<br>npm install<br></code></pre></td></tr></table></figure><p>本地启动</p><figure class="highlight axapta"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs axapta">hexo g<br>hexo <span class="hljs-keyword">server</span><br></code></pre></td></tr></table></figure><p>浏览器访问 <a href="http://localhost:4000，页面默认主图风格如下">http://localhost:4000，页面默认主图风格如下</a></p><p><img src="/2024/11/06/hello-world/%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/defaultStyle.png" alt="defaultStyle"></p><h3 id="3-3更换主题"><a href="#3-3更换主题" class="headerlink" title="3.3更换主题"></a>3.3更换主题</h3><p><code>Hexo</code> 默认的主题不太好看，不过官方提供了数百种主题供用户选择，可以根据自己的喜好选择，官网主题点 <a href="https://hexo.io/themes/">这里</a> 查看。</p><h4 id="3-3-1-Fluid主题"><a href="#3-3-1-Fluid主题" class="headerlink" title="3.3.1 Fluid主题"></a>3.3.1 Fluid主题</h4><h5 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a><strong>安装主题</strong></h5><p>下载 <a href="https://github.com/fluid-dev/hexo-theme-fluid/releases">最新 release 版本</a> 解压到 <code>themes</code> 目录，并将解压出的文件夹重命名为 <code>fluid</code>。</p><p><img src="/2024/11/06/hello-world/%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/hexoCliThems.png" alt="下载解压到hexo-cli项目thems目录下"></p><h5 id="指定主题"><a href="#指定主题" class="headerlink" title="指定主题"></a>指定主题</h5><p>如下修改 Hexo 博客目录中的 _config.yml：</p><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs avrasm"><span class="hljs-symbol">theme:</span> fluid  <span class="hljs-meta"># 指定主题</span><br><span class="hljs-symbol">language:</span> <span class="hljs-built_in">zh</span>-CN  <span class="hljs-meta"># 指定语言，会影响主题显示的语言，按需修改</span><br></code></pre></td></tr></table></figure><p><strong>创建「关于页」</strong></p><p>首次使用主题的「关于页」需要手动创建</p><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs actionscript">hexo <span class="hljs-keyword">new</span> page about<br></code></pre></td></tr></table></figure><p>创建成功后，编辑博客目录下 <code>/source/about/index.md</code>，添加 <code>layout</code> 属性。</p><p>修改后的文件示例如下</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">about</span><br><span class="hljs-attr">date:</span> <span class="hljs-number">2024-11-18 19:20:33</span><br><span class="hljs-attr">layout:</span> <span class="hljs-string">about</span><br><span class="hljs-meta">---</span><br><span class="hljs-meta"></span><br><span class="hljs-string">这里写关于页的正文，支持</span> <span class="hljs-string">Markdown,</span> <span class="hljs-string">HTML</span><br><br></code></pre></td></tr></table></figure><h5 id="本地启动"><a href="#本地启动" class="headerlink" title="本地启动"></a><strong>本地启动</strong></h5><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs css">hexo <span class="hljs-selector-tag">g</span> -d<br>hexo s<br></code></pre></td></tr></table></figure><p>浏览器访问 <a href="http://localhost:4000，`Fluid`主题风格页面如下">http://localhost:4000，`Fluid`主题风格页面如下</a><br><img src="/2024/11/06/hello-world/%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/FluidStyle.png" alt="FluidStyle"></p><h3 id="3-4-创建文章"><a href="#3-4-创建文章" class="headerlink" title="3.4 创建文章"></a>3.4 创建文章</h3><p>如下修改 Hexo 博客目录中的 <code>_config.yml</code>，打开这个配置是为了在生成文章的时候生成一个同名的资源目录用于存放图片文件。</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">post_asset_folder:</span> <span class="hljs-literal">true</span><br><br></code></pre></td></tr></table></figure><p>执行如下命令创建一篇新文章，名为《测试文章》</p><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs livecodeserver">hexo <span class="hljs-built_in">new</span> <span class="hljs-built_in">post</span> 测试文章<br></code></pre></td></tr></table></figure><p>执行完成后在<code>source\_posts</code>目录下生成了一个md文件和一个同名的资源目录(用于存放图片)</p><p>在资源目录<code>测试文章</code>中放一张图片 <code>test.png</code></p><p><img src="/2024/11/06/hello-world/%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/testPng.png" alt="testPng"></p><p><strong>本地启动</strong></p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs css">hexo <span class="hljs-selector-tag">g</span> -d<br>hexo s<br></code></pre></td></tr></table></figure><h3 id="3-5-发布到github-pages上"><a href="#3-5-发布到github-pages上" class="headerlink" title="3.5 发布到github pages上"></a>3.5 发布到github pages上</h3><h4 id="部署一：hexo插件"><a href="#部署一：hexo插件" class="headerlink" title="部署一：hexo插件"></a>部署一：hexo插件</h4><p>安装hexo-deployer-git</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install hexo-deployer-git --save<br></code></pre></td></tr></table></figure><p>修改根目录下的 <code>_config.yml</code>，配置 <code>GitHub</code> 相关信息</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash">deploy:<br>  <span class="hljs-built_in">type</span>: git<br>  repo: https://github.com/chuliuhuan/chuliuhuan.github.io.git<br>  branch: main<br>  token: ghp_3KakcaPHerunNRyMerofcFd9pblU282FSbsY<br><br></code></pre></td></tr></table></figure><p>其中 <code>token</code> 为 <code>GitHub</code> 的 <code>Personal access tokens</code>，获取方式如下图</p><p><img src="/2024/11/06/hello-world/%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/gitHubToken.png" alt="gitHubToken"></p><p>部署到GitHub</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css">hexo <span class="hljs-selector-tag">g</span> -d<br></code></pre></td></tr></table></figure><p>浏览器访问 <a href="https://chuliuhuan.github.io/%EF%BC%8C%E6%B5%8B%E8%AF%95%E9%83%A8%E7%BD%B2%E6%98%AF%E5%90%A6%E6%88%90%E5%8A%9F">https://chuliuhuan.github.io/，测试部署是否成功</a></p><h4 id="部署二：把public文件内容直接丢到github仓库上"><a href="#部署二：把public文件内容直接丢到github仓库上" class="headerlink" title="部署二：把public文件内容直接丢到github仓库上"></a>部署二：把public文件内容直接丢到github仓库上</h4><p>把public文件内容直接丢到github仓库上</p><h4 id="部署三：自己配置nginx"><a href="#部署三：自己配置nginx" class="headerlink" title="部署三：自己配置nginx"></a>部署三：自己配置nginx</h4><p>有自己服务器</p><h2 id="4-配置独特的域名"><a href="#4-配置独特的域名" class="headerlink" title="4.配置独特的域名"></a>4.配置独特的域名</h2><h2 id="5-配置域名SSL"><a href="#5-配置域名SSL" class="headerlink" title="5.配置域名SSL"></a>5.配置域名SSL</h2>]]></content>
     
     
     <categories>
@@ -23,25 +23,6 @@
       <tag>个人名片</tag>
       
     </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="/2024/11/17/hello-world/"/>
-    <url>/2024/11/17/hello-world/</url>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-    
-    
-    <categories>
-      
-      <category>介绍</category>
-      
-    </categories>
-    
     
   </entry>
   
@@ -73,6 +54,60 @@
   
   
   <entry>
+    <title>vue子父组件对象传递</title>
+    <link href="/2024/11/13/vue%E5%AD%90%E7%88%B6%E7%BB%84%E4%BB%B6%E5%AF%B9%E8%B1%A1%E4%BC%A0%E9%80%92/"/>
+    <url>/2024/11/13/vue%E5%AD%90%E7%88%B6%E7%BB%84%E4%BB%B6%E5%AF%B9%E8%B1%A1%E4%BC%A0%E9%80%92/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>前端</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>vue</tag>
+      
+      <tag>js</tag>
+      
+      <tag>自定义组件</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>liunx查看端口被哪个程序占用</title>
+    <link href="/2024/11/08/liunx%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3%E8%A2%AB%E5%93%AA%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%8D%A0%E7%94%A8/"/>
+    <url>/2024/11/08/liunx%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3%E8%A2%AB%E5%93%AA%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%8D%A0%E7%94%A8/</url>
+    
+    <content type="html"><![CDATA[<p>查看liunx端口被那个程序占用</p><h2 id="常用的方法"><a href="#常用的方法" class="headerlink" title="常用的方法"></a>常用的方法</h2><p> sudo lsof -i :端口号</p><h3 id="譬如"><a href="#譬如" class="headerlink" title="譬如"></a>譬如</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">sudo</span> lsof -i -P -n | grep 18081<br><br><span class="hljs-built_in">sudo</span> lsof -i -P -n | grep 端口号<br></code></pre></td></tr></table></figure><p>执行结果</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash">[root@iZuf683s6z2f7r40uie2drZ ~]# <span class="hljs-built_in">sudo</span> lsof -i -P -n | grep 18081<br>nginx      213543            root   23u  IPv4    935941      0t0  TCP *:18081 (LISTEN)<br>nginx     2960361          nobody   23u  IPv4    935941      0t0  TCP *:18081 (LISTEN)<br><br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>运维</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>liunx</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>测试文章</title>
     <link href="/2024/11/07/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/"/>
     <url>/2024/11/07/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</url>
@@ -96,6 +131,25 @@
       <tag>表单验证</tag>
       
     </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="/2024/11/06/hello-world/"/>
+    <url>/2024/11/06/hello-world/</url>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>介绍</category>
+      
+    </categories>
+    
     
   </entry>
   
